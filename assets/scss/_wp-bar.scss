@@ -37,7 +37,7 @@ html{
 #wp-admin-bar-comments,
 #wp-admin-bar-updates,
 #wp-admin-bar-search{
-  display: none;
+  display: none !important;
 }
 
 #wpadminbar .ab-top-secondary .menupop .ab-sub-wrapper {
@@ -48,17 +48,17 @@ html{
 
 #wpadminbar #wp-admin-bar-new-content{
   .ab-sub-wrapper{
-    position: static;
+    position: static !important;
 
     .ab-item{
-      display: none;
+      display: none !important;
     }
 
     #wp-admin-bar-new-post,
     #wp-admin-bar-new-media,
     #wp-admin-bar-new-page,
     #wp-admin-bar-new-user{
-      display: none;
+      display: none !important;;
     }
 
   }
