@@ -1,3 +1,7 @@
+html{
+  margin-top: 0 !important;
+}
+
 #wp-toolbar{
   height: auto !important;
 }
@@ -40,6 +44,24 @@
   position: static;
   display: block;
   margin-top: 20px;
+}
+
+#wpadminbar #wp-admin-bar-new-content{
+  .ab-sub-wrapper{
+    position: static;
+
+    .ab-item{
+      display: none;
+    }
+
+    #wp-admin-bar-new-post,
+    #wp-admin-bar-new-media,
+    #wp-admin-bar-new-page,
+    #wp-admin-bar-new-user{
+      display: none;
+    }
+
+  }
 }
 
 #wpadminbar #wp-admin-bar-my-account.with-avatar #wp-admin-bar-user-actions>li {
