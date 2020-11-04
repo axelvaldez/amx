@@ -146,4 +146,11 @@
   if( function_exists('acf_add_options_page') ) {
     acf_add_options_page();
   }
+
+  // REMOVE BLOCK LIBRARY
+
+  function avmx_remove_block_library_css(){
+    wp_dequeue_style( 'wp-block-library' );
+  } 
+  add_action( 'wp_enqueue_scripts', 'avmx_remove_block_library_css' );
 ?>
