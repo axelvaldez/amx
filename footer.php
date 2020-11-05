@@ -10,6 +10,7 @@
         </div>
       </div>
       <div class="col-12 col-md-5 footer-social">
+        <p class="my-0"><a href="/privacy" class="muted" title="Privacy Policy">Privacy Policy</a></p>
         <?php include('inc/social.php'); ?>
       </div>
     </div>

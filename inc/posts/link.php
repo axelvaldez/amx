@@ -10,6 +10,8 @@
   <div class="col-lg-9">
     <?php if (!is_single()){ ?>
       <h3 class="p-name post-title my-0"> <a href="<?php the_field('link_url'); ?>"><?php the_title(); ?></a></h3>
+    <?php } else { ?>
+      <h3 class="h3 my-0"> <a href="<?php the_field('link_url'); ?>"><?php echo str_replace('https://', '', get_field('link_url')); ?></a></h3>
     <?php } ?>
     <div class="e-content">
       <?php the_content(); ?>
