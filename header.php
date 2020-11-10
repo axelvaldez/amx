@@ -6,9 +6,9 @@
     <title><?php wp_title('&middot;','true','right'); ?><?php bloginfo('name'); ?></title>
     <link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/main.min.css">
-    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/assets/img/favicon-16x16.png" sizes="16x16">  
-    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/assets/img/favicon-32x32.png" sizes="32x32">  
-    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/assets/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/assets/img/favicon-16.png" sizes="16x16">  
+    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/assets/img/favicon-32.png" sizes="32x32">  
+    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/assets/img/favicon-180.png" sizes="180x180">
     <link href="https://micro.blog/axel" rel="me" />
     <?php
     if ( is_archive() ){
