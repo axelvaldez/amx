@@ -160,6 +160,10 @@ nav{
   .flex-break{
     display: none;
   }
+
+  .current-menu-item{
+    font-weight: bold;
+  }
 }
 
 .menu-social{
@@ -424,4 +428,34 @@ footer{
 
 .muted{
   color: #A89091;
+}
+
+// DUOTONE IMAGE
+
+.duotone{
+  position: relative;
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: saturate(0);
+  }
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+  }
+  
+  &:before{ 
+    background: $color-white;
+    mix-blend-mode: darken;
+    z-index: 1;
+  }
+  
+  &:after{
+    background: lighten($color-accent, 15%);
+    mix-blend-mode: lighten;
+    z-index: 2;
+  }
 }

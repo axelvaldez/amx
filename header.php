@@ -37,7 +37,7 @@
             <a class="logo u-url d-flex" rel="me" href="<?php bloginfo('url'); ?>">
                 <?php include('assets/img/amx-logo.svg'); ?>
                 <span><strong class="p-name"><?php bloginfo('name'); ?></strong><br>
-                <?php bloginfo('description'); ?></span>
+                <span class="logodesc"><?php bloginfo('description'); ?></span></span>
             </a>
           </p>
           
