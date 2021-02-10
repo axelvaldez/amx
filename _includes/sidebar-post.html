@@ -1,6 +1,7 @@
 {% assign month = page.date | date: '%m' | minus: 1%}
 
-<p>Publicado en
+<p>
+{% include icons/calendar.svg %}
 {{ site.data.months.names[month] }}
 {{ page.date | date: "%d, %Y" }}.
 </p>
