@@ -1,0 +1,8 @@
+{% assign month = page.date | date: '%m' | minus: 1%}
+
+<p>Publicado en
+{{ site.data.months.names[month] }}
+{{ page.date | date: "%d, %Y" }}.
+</p>
+
+<p><a href="mailto:axel@paskola.com">Responder por email</a>.</p>
