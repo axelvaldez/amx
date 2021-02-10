@@ -1,9 +1,12 @@
 {% assign month = page.date | date: '%m' | minus: 1%}
 
 <p>
-{% include icons/calendar.svg %}
-{{ site.data.months.names[month] }}
-{{ page.date | date: "%d, %Y" }}.
+  {% include icons/calendar.svg %}
+  {{ site.data.months.names[month] }}
+  {{ page.date | date: "%d, %Y" }}.
 </p>
 
-<p><a href="mailto:axel@paskola.com">Responder por email</a>.</p>
+<p>
+  {% include icons/envelope.svg %}
+  <a href="mailto:axel@paskola.com">Responder por email</a>.
+</p>
