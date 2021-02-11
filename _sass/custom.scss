@@ -10,7 +10,7 @@ html{
 body{
     font-size: 1rem;
     font-family: "Karla", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
     padding-top: 3rem;
     color: $color-dark;
@@ -51,9 +51,22 @@ img{
   height: auto;
 }
 
+.icon{
+  width: 20px;
+  height: 20px;
+  margin-right: .25rem;
+  position: relative;
+  top: -2px;
+}
+
 .nav{
     margin-bottom: 4rem;
     line-height: 1;
+}
+
+.nav-menu{
+  position: relative;
+  top: 5px;
 }
 
 .logo{
