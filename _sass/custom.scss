@@ -19,7 +19,7 @@ body{
 }
 
 h1, h2, h3, b,strong{
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h1{
@@ -39,7 +39,7 @@ h2{
 
 a{
     color: $color-dark;
-    font-weight: 600;
+    font-weight: 700;
 
     &:hover{
       color: $color-accent;
