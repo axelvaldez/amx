@@ -3,3 +3,6 @@ baseurl: "/"
 title: "Axel Valdez"
 
 permalink: /:categories/:year/:month/:title
+
+plugins:
+  - jekyll-feed

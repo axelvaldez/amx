@@ -1,4 +1,4 @@
-$color-dark: #000;
+$color-dark: #222;
 $color-light: #fff;
 $color-accent: #1F77F8;
 
@@ -91,17 +91,18 @@ section{
     padding-bottom: 4rem;
 }
 
-.post-list-date{
-    opacity: .5;
-    position: relative;
+.post-list-link{
+  position: relative;
+}
 
-    &::after{
-      @media (min-width: 992px){
-          content: "•";
-          position: absolute;
-          right: 0rem;
-      }
-    }
+.post-list-item:not(:last-child) .post-list-link::after{
+  content: "";
+  width: calc(100% - 30px);
+  height: 1px;
+  background-color: rgba($color-dark, .25);
+  position: absolute;
+  bottom: 0;
+  left: 15px;
 }
 
 .footer{
