@@ -2,3 +2,4 @@
 .vscode
 _site
 .jekyll-cache
+.ruby-version

@@ -1,3 +1,22 @@
 {% include header.html %}
-    {% include section-blog-front.html %}
+<section class="posts">
+
+  <div class="row">
+      <!-- blog posts -->
+      <div class="col-lg-8">
+        <div class="lead mb-5">
+          {{ content }}
+        </div>
+      
+        <h2>Notas:</h2>
+          {% include post-list.html %}
+      </div>
+
+      <!-- sidebar -->
+      <div class="col-lg-3 offset-lg-1 d-none d-lg-block">
+          {% include sidebar-me.html %}
+      </div>
+  </div>
+  
+</section>
 {% include footer.html %}

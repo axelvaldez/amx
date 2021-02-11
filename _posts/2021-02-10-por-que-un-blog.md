@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "¿Por qué un blog?"
+tldr: "Las redes sociales actuales son demasiado negativas y un blog crea un espacio tranquilo y libre."
 ---
 
 He sido usuario de Twitter desde 2006. Registré mi cuenta justo al principio, cuando los tweets se enviaban por SMS o mensajería instantánea. En ese tiempo empezó a crearse una comunidad cercana y de mucha buena vibra. En 2010 Anabel y yo prácticamente hicimos live-tweeting del nacimiento de Andrés, nuestro hijo más grande, y un buen de gente a quien no conocíamos en persona estuvo ahí con nosotros.
