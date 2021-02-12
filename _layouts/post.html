@@ -5,7 +5,7 @@
   </div>
 
   <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-8 content">
           {% if page.tldr %}
             <p class="lead">{{ page.tldr }}</p>
           {% endif %}
@@ -29,9 +29,11 @@
         </div>
         
         <div class="mt-5 mt-lg-0">
-          <div class="color-invert d-flex d-lg-block align-items-center">
-            {% include icons/axel.svg %}
-            <p class="p-3 mb-0">Hola, soy Axel y este es mi blog. <a href="/about">Acá puedes saber más de mí</a>.</p>
+          <div class="color-invert d-flex d-lg-block align-items-stretch">
+            <p class="mb-0 img-axel d-flex align-items-center">{% include icons/axel.svg %}</p>
+            <p class="p-3 mb-0 d-flex align-items-center">
+              <span>Hola, soy Axel y este es mi blog. <a href="/about">Acá puedes saber más de mí</a>.</span>
+            </p>
           </div>
         </div>
       </div>

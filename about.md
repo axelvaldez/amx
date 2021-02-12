@@ -6,7 +6,7 @@ intro: "Hola, soy Axel Valdez. Trabajo diseñando y escribiendo código de color
 
 Cuando no estoy enfrente de una computadora, probablemente esté en la cocina horneando, o divirtiéndome con alguna de [estas personas](https://www.instagram.com/p/CACQTU1HBKD/).
 
-**DATOS RANDOM ACERCA DE MI:**
+### Datos random acerca de mi:
 
 - Mi película favorita es Fight Club, seguida de cerquita por Trainspotting.
 - Para seguir con los clichés, mi novela favorita es Cien Años de Soledad.
@@ -14,14 +14,14 @@ Cuando no estoy enfrente de una computadora, probablemente esté en la cocina ho
 - Me gustan los viniles. ¿Vinilos? Si, eso. Tengo una pequeña colección de unos 70.
 - No bebo seguido, pero cuando lo hago prefiero cerveza (mis favoritas son las IPA), u old fashioneds, por culpa de Don Draper y del Arturo Mendez.
 
-**ALGUNAS COSAS QUE HAGO:**
+### Algunas cosas que hago:
 
 - [Rancheros Tiernos con la Salsa Aparte](https://rancherostiernos.com)<br>Un podcast de pura conversación, con Arturo Mendez.
 - [Escucha en Casa](https://escuchaen.casa)<br>Un directorio de podcasts independientes en español.
 - [My Favorite Thing](https://things.axelvaldez.mx)<br>Una single-serving web app para contarle al mundo cual es tu cosa favorita.
 - [The Headphonist](https://theheadphonist.com)<br>Blog de canciones medio abandonado, pero bonito.
 
-**CONTÁCTAME**
+### Contáctame
 
 <p>La manera más simple y rápida para contactarme es enviandome un email, y ni siquiera tienes que abrir el tuyo, nada más haz click en este link:</p>
 <p><a href="#contact">Envíame un email</a>.</p>
