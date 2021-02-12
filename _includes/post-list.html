@@ -2,10 +2,14 @@
     {% for post in site.posts %}
     {% assign month = post.date | date: '%m' | minus: 1%}
     <li class="post-list-item row mb-2">
-        <a href="{{ post.url }}" class="post-list-link col-12 m-0 pb-2 d-block d-lg-flex justify-content-between" title="Leer {{ post.title }}">
+      <div class="col-lg-8 order-2 order-lg-1">
+        <a href="{{ post.url }}" class="post-list-link" title="Leer {{ post.title }}">
           {{ post.title }}
-          <span class="post-list-date muted font-weight-normal d-block d-lg-inline text-left text-lg-right">{{ site.data.months.names[month] }} {{ post.date | date: "%d, %Y" }}</span>
         </a>
+      </div>
+      <div class="col-lg-4 order-1 order-lg-2">
+        <span class="post-list-date muted font-weight-normal d-block text-left text-lg-right">{{ site.data.months.names[month] }} {{ post.date | date: "%d, %Y" }}</span>
+      </div>
     </li>
     {% endfor %}
 </ul>

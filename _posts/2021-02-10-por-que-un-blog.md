@@ -18,4 +18,4 @@ Con todo esto, pensé en darme un respiro y empezar a escribir en un lugar como 
 
 Construí este sitio en WordPress un fin de semana y copié algunos blog posts que tenía escritos en inglés, pero luego decidí que mejor escribiría en español y de paso cambié todo y reconstruí la cosa con [Jekyll](https://jekyllrb.com) para volverlo más portable. Ahora está hosteado en [Netlify](https://netlify.com) y todo el diseño y el contenido vive en un repositorio de GitHub.
 
-Si te interesa hacer algo similar, avísame y con gusto te ayudo a configurarlo.
+Si te interesa hacer algo similar, [avísame](#respond) y con gusto te ayudo a configurarlo.
