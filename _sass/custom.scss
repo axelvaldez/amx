@@ -1,8 +1,6 @@
 $color-dark: #000;
 $color-light: #fff;
 $color-accent: #fc0;
-$color-text: #000;
-$color-medium: #dedede;
 
 html{
     font-size: 20px;
@@ -14,8 +12,7 @@ body{
     font-family: "Karla", sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    padding-top: 3rem;
-    color: $color-text;
+    color: $color-dark;
     background: $color-light;
     mix-blend-mode: lighten;
 }
@@ -40,7 +37,7 @@ h2{
 }
 
 a:not(.nodecoration){
-    color: $color-text;
+    color: $color-dark;
     font-weight: 700;
     text-decoration: none;
     background-image: linear-gradient(180deg, transparent 90%, $color-accent 0);
@@ -53,16 +50,36 @@ a:not(.nodecoration){
       color: $color-dark;
       text-decoration: none;
       background-color: $color-accent;
-
-      .color-invert &{
-        color: $color-dark;
-      }
     }
 }
 
 img{
   max-width: 100%;
   height: auto;
+}
+
+.nav{
+    margin-bottom: 4rem;
+    line-height: 1;
+}
+
+// SVG
+
+.logo{
+    width: 100%;
+    height: auto;
+
+    .nav &{
+      fill: $color-dark;
+
+      &:hover{
+        fill: $color-accent;
+      }
+    }
+
+    .footer &{
+      fill: $color-light;
+    }
 }
 
 .icon{
@@ -73,31 +90,9 @@ img{
   top: -2px;
 }
 
-.muted{
-  opacity: .5;
-}
-
-.nav{
-    margin-bottom: 4rem;
-    line-height: 1;
-}
-
-.nav-menu{
-  position: relative;
-  top: 5px;
-}
-
-.logo{
-    width: 100%;
-    height: auto;
-
-    .nav &{
-      fill: $color-dark;
-    }
-
-    .footer &{
-      fill: $color-light;
-    }
+.img-axel{
+  background: $color-accent;
+  fill: $color-dark;
 }
 
 section{
@@ -106,26 +101,16 @@ section{
 }
 
 .footer{
-    background: $color-dark;
-    color: $color-light;
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
-.img-axel{
-  background: $color-accent;
-  fill: $color-dark;
-}
-
-.color-invert{
-  background: $color-dark;
-  color: $color-light;
-}
+// OVERLAYS
 
 .overlay{
   position: fixed;
   z-index: 10;
-  background: rgba($color-light, .85);
+  background: rgba($color-light, .9);
   align-items: flex-start;
   justify-content: center;
   top: 0;
@@ -152,12 +137,19 @@ section{
 .btn-primary{
   background: $color-accent;
   border-color: $color-accent;
-  color: $color-text;
+  color: $color-dark;
   font-weight: 700;
 
   &:hover{
     background: $color-light;
     border-color: $color-light;
-    color: $color-text;
+    color: $color-dark;
   }
+}
+
+// UTILITIES
+
+.color-invert{
+  background: $color-dark;
+  color: $color-light;
 }

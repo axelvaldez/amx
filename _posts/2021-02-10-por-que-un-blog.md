@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "¿Por qué un blog?"
+title:  "Es 2021, ¿Por qué un blog?"
 tldr: "Las redes sociales actuales son demasiado negativas y un blog crea un espacio tranquilo y libre."
 ---
 
