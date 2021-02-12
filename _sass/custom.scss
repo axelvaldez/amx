@@ -36,20 +36,34 @@ h2{
   margin-bottom: 1rem;
 }
 
-a:not(.nodecoration){
+a{
     color: $color-dark;
     font-weight: 700;
     text-decoration: none;
-    background-image: linear-gradient(180deg, transparent 90%, $color-accent 0);
 
+    &:not(.nodecoration){
+      background-image: linear-gradient(180deg, transparent 90%, $color-accent 0);
+    }
+    
     .color-invert &{
       color: $color-light;
+    }
+
+    svg{
+      fill: $color-dark;
     }
 
     &:hover{
       color: $color-dark;
       text-decoration: none;
-      background-color: $color-accent;
+
+      &:not(.nodecoration){
+        background-color: $color-accent;
+      }
+
+      svg{
+        fill: $color-accent;
+      }
     }
 }
 
@@ -63,19 +77,15 @@ img{
     line-height: 1;
 }
 
+.nav-social a{
+  margin-left: 1rem;
+}
+
 // SVG
 
 .logo{
     width: 100%;
     height: auto;
-
-    .nav &{
-      fill: $color-dark;
-
-      &:hover{
-        fill: $color-accent;
-      }
-    }
 
     .footer &{
       fill: $color-light;

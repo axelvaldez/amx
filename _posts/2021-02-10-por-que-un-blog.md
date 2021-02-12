@@ -1,5 +1,6 @@
 ---
 layout: post
+excerpt_separator: <!--more-->
 title:  "Es 2021, ¿Por qué un blog?"
 tldr: "Las redes sociales actuales son demasiado negativas y un blog crea un espacio tranquilo y libre."
 ---
@@ -7,6 +8,8 @@ tldr: "Las redes sociales actuales son demasiado negativas y un blog crea un esp
 He sido usuario de Twitter desde 2006. Registré mi cuenta justo al principio, cuando los tweets se enviaban por SMS o mensajería instantánea. En ese tiempo empezó a crearse una comunidad cercana y de mucha buena vibra. En 2010 Anabel y yo prácticamente hicimos live-tweeting del nacimiento de Andrés, nuestro hijo más grande, y un buen de gente a quien no conocíamos en persona estuvo ahí con nosotros.
 
 Esa red de apoyo sigue ahí, y a algunos los conocemos en persona y tratamos de mantenerlos cerca, pero también hay mucho ruido. Hoy Twitter es extremadamente negativo, lleno de opiniones desinformadas e innecesariamente agresivas, lo que parece ser el estilo acordado en algún punto de estos 15 años. La mayoría de los tweets son motivados, o simplemente por el odio, o por un intento de hacer humor (también salpicado de odio, casi siempre).
+
+<!--more-->
 
 Los intereses políticos y los bots tampoco ayudan, nada más intensifican ese odio.
 

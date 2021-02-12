@@ -1,0 +1,42 @@
+{% include header.html %}
+<section>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <h1>{{ page.title }}</h1>
+      {% if page.intro %}
+        <div class="lead">
+          <p>{{ page.intro }}</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {% for post in site.posts %}
+  <div class="row">
+      <!-- blog posts -->
+      <div class="col-lg-8">
+          {% assign month = post.date | date: '%m' | minus: 1%}
+            <h2><a href="{{ post.url }}" class="post-list-link" title="Leer {{ post.title }}">{{ post.title }}</a></h2>
+            {{ post.excerpt }}
+            {% if post.excerpt != post.content %}
+                <a href="{{ post.url }}">Read more</a>
+            {% endif %}
+      </div>
+
+      <!-- sidebar -->
+      <div class="col-lg-3 offset-lg-1 mt-5 mt-lg-0">
+        <div class="d-flex justify-content-between d-lg-block mt-3 mt-lg-0">
+          {% assign month = post.date | date: '%m' | minus: 1%}
+          <p>
+            {% include icons/calendar.svg %}
+            {{ site.data.months.names[month] }}
+            {{ post.date | date: "%d, %Y" }}
+          </p>
+        </div>
+      </div>
+  </div>
+  {% endfor %}
+  
+</section>
+{% include footer.html %}
