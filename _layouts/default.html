@@ -4,23 +4,30 @@
   <div class="row">
     <div class="col-lg-8">
       <h1>{{ page.title }}</h1>
-      {% if page.intro %}
-        <div class="lead">
-          <p>{{ page.intro }}</p>
-        </div>
-      {% endif %}
     </div>
   </div>
 
   <div class="row">
       <!-- blog posts -->
       <div class="col-lg-8">
-          {{ content }}
+        {% if page.intro %}
+          <div class="lead">
+            <p>{{ page.intro }}</p>
+          </div>
+        {% endif %}
+        {{ content }}
       </div>
 
       <!-- sidebar -->
-      <div class="col-lg-3 offset-lg-1 d-none d-lg-block">
-          {% include sidebar-me.html %}
+      <div class="col-12 col-lg-3 offset-lg-1 mt-5 mt-lg-0 ">
+        <div class="color-invert d-flex d-lg-block align-items-center">
+          {% include icons/axel.svg %}
+          {% if page.url == "/about" %}
+            <p class="p-3">Ese de arriba soy yo. Más o menos.</p>
+          {% else %}
+            <p class="p-3">Hola, soy Axel y este es mi blog. <a href="/about">Acá puedes saber más de mí</a>.</p>
+          {% endif %}
+        </div>
       </div>
   </div>
   
