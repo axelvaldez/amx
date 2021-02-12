@@ -2,14 +2,19 @@
 <section>
 
   <div class="row">
+    <div class="col-lg-8">
+      <h1>{{ page.title }}</h1>
+      {% if page.intro %}
+        <div class="lead">
+          <p>{{ page.intro }}</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="row">
       <!-- blog posts -->
       <div class="col-lg-8">
-          <h1>{{ page.title }}</h1>
-          {% if page.intro %}
-          <div class="lead">
-            <p>{{ page.intro }}</p>
-          </div>
-          {% endif %}
           {{ content }}
       </div>
 
