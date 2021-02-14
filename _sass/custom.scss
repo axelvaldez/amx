@@ -1,10 +1,20 @@
-$color-dark: #000;
-$color-light: #fff;
-$color-accent: #fc0;
+// VARIABLES
 
 html{
     font-size: 20px;
-    background: $color-dark url(/assets/img/photocopy.jpg);
+    // background: var(--color-dark) url(/assets/img/photocopy.jpg);
+
+    --color-text: #333;
+    --color-dark: #111;
+    --color-light: #fff;
+    --color-accent: #fc0;
+
+    @media (prefers-color-scheme: dark){
+      --color-text: #eee;
+      --color-dark: #000;
+      --color-light: #333;
+      --color-accent: #fc0;
+    }
 }
 
 body{
@@ -12,9 +22,9 @@ body{
     font-family: "Karla", sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    color: $color-dark;
-    background: $color-light;
-    mix-blend-mode: lighten;
+    color: var(--color-text);
+    background: var(--color-light);
+    // mix-blend-mode: lighten;
 }
 
 h1, h2, h3, b,strong{
@@ -40,32 +50,39 @@ h3{
 }
 
 a{
-    color: $color-dark;
+    color: var(--color-text);
     font-weight: 700;
     text-decoration: none;
 
     &:not(.nodecoration){
-      background-image: linear-gradient(180deg, transparent 90%, $color-accent 0);
+      background-image: linear-gradient(180deg, transparent 90%, var(--color-accent) 0);
     }
     
     .color-invert &{
-      color: $color-light;
+      color: var(--color-light);
+      @media (prefers-color-scheme: dark){
+        color: var(--color-text);
+      }
     }
 
     svg{
-      fill: $color-dark;
+      fill: var(--color-text);
     }
 
     &:hover{
-      color: $color-dark;
+      color: var(--color-text);
       text-decoration: none;
 
+      @media (prefers-color-scheme: dark){
+        color: var(--color-dark);
+      }
+
       &:not(.nodecoration){
-        background-color: $color-accent;
+        background-color: var(--color-accent);
       }
 
       svg{
-        fill: $color-accent;
+        fill: var(--color-accent);
       }
     }
 }
@@ -87,7 +104,11 @@ img{
     height: auto;
 
     .footer &{
-      fill: $color-light;
+      fill: var(--color-light);
+      
+      @media (prefers-color-scheme: dark){
+        fill: var(--color-text);
+      }
     }
 }
 
@@ -97,13 +118,14 @@ img{
   margin-right: .25rem;
   position: relative;
   top: -2px;
+  fill: currentColor;
 }
 
 .img-axel{
-  background: $color-accent;
+  background: var(--color-accent);
 
   svg{
-    fill: $color-dark;
+    fill: var(--color-dark);
   }
   
 }
@@ -123,7 +145,6 @@ section{
 .overlay{
   position: fixed;
   z-index: 10;
-  background: rgba($color-light, .9);
   align-items: flex-start;
   justify-content: center;
   top: 0;
@@ -132,6 +153,11 @@ section{
   height: 100vh;
   display: none;
   overflow: auto;
+  background: rgba(#fff, .9);
+
+  @media (prefers-color-scheme: dark){
+    background: rgba(#333, .9);
+  }
 }
 
 .show-respond, .show-contact{
@@ -148,15 +174,15 @@ section{
 }
 
 .btn-primary{
-  background: $color-accent;
-  border-color: $color-accent;
-  color: $color-dark;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-dark);
   font-weight: 700;
 
   &:hover{
-    background: $color-light;
-    border-color: $color-light;
-    color: $color-dark;
+    background: var(--color-light);
+    border-color: var(--color-light);
+    color: var(--color-dark);
   }
 }
 
@@ -187,6 +213,11 @@ section{
 // UTILITIES
 
 .color-invert{
-  background: $color-dark;
-  color: $color-light;
+  background: var(--color-dark);
+  color: var(--color-light);
+
+  @media (prefers-color-scheme: dark){
+    color: var(--color-text);
+  }
+
 }
