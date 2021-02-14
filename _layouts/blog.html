@@ -15,7 +15,7 @@
   {% for post in site.posts %}
   <div class="row">
       <!-- blog posts -->
-      <div class="col-lg-8">
+      <div class="col-lg-8 content">
           {% assign month = post.date | date: '%m' | minus: 1%}
             <h2><a href="{{ post.url }}" class="post-list-link" title="Leer {{ post.title }}">{{ post.title }}</a></h2>
             {{ post.excerpt }}
