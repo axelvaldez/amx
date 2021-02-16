@@ -2,10 +2,14 @@
   <div class="overlay-card py-4 px-3 px-md-4 my-auto color-invert">
     <h3>Contacto via Email</h3>
     <p>Soy un viejo al que le gusta el email. Leo todo lo que llega.</p>
-    <form action="/thanks" name="contact" netlify>
+    <form action="/thanks" name="contact" netlify-honeypot="pot" netlify>
       <div class="form-group">
         <label for="nombre">Nombre</label>
         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+      </div>
+      <div class="form-group" style="display: none;">
+        <label for="pot">No llenar:</p>
+        <input class="form-control" name="pot">
       </div>
       <div class="form-group">
         <label for="email">Email</label>
