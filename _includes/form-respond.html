@@ -4,7 +4,7 @@
     <form action="/thanks" name="respond" netlify-honeypot="pot" netlify>
       <div class="form-group">
         <label for="nombre">Nombre</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
       </div>
       <div class="form-group" style="display: none;">
         <label for="pot">No llenar:</p>
@@ -12,11 +12,11 @@
       </div>
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
       </div>
       <div class="form-group">
         <label for="comentario">Comentario</label>
-        <textarea class="form-control" id="comentario" name="comentario" placeholder="" rows="5"></textarea>
+        <textarea class="form-control" id="comentario" name="comentario" placeholder="" rows="5" required></textarea>
       </div>
       <div class="row">
         <div class="col d-flex justify-content-end align-items-center">
