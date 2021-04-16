@@ -16,6 +16,7 @@ Cuando no estoy enfrente de una computadora, probablemente esté en la cocina ho
 
 ### Algunas cosas que hago:
 
+- [HTMLyCSS](https://htmlycss.com)<br>Un blog acerca de HTML y CSS. [Aquí puedes leer más al respecto](/2021/04/html-y-css/).
 - [Rancheros Tiernos con la Salsa Aparte](https://rancherostiernos.com)<br>Un podcast de pura conversación, con Arturo Mendez.
 - [Escucha en Casa](https://escuchaen.casa)<br>Un directorio de podcasts independientes en español.
 - [My Favorite Thing](https://things.axelvaldez.mx)<br>Una single-serving web app para contarle al mundo cual es tu cosa favorita.
