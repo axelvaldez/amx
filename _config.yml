@@ -2,10 +2,7 @@ url: "https://axel.mx"
 baseurl: "/"
 title: "Axel Valdez"
 
-permalink: /:categories/:year/:month/:title
-
-plugins:
-  - jekyll-feed
+permalink: /:year/:month/:title/
 
 sass:
   style: compressed
