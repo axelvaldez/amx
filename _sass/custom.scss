@@ -24,7 +24,9 @@ body{
     line-height: 1.5;
     color: var(--color-text);
     background: var(--color-light);
-    // mix-blend-mode: lighten;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h2, h3, b,strong{
@@ -138,6 +140,7 @@ section{
 .footer{
     padding-top: 4rem;
     padding-bottom: 4rem;
+    margin-top: auto;
 }
 
 // OVERLAYS
