@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Acerca de Mi"
-intro: "Hola, soy Axel Valdez. Trabajo diseñando y escribiendo código de colores en una computadora, casi siempre HTML, CSS y JavaScript."
+tldr: "Hola, soy Axel Valdez. Trabajo diseñando y escribiendo código de colores en una computadora, casi siempre HTML, CSS y JavaScript."
 ---
 
 Cuando no estoy enfrente de una computadora, probablemente esté en la cocina horneando, o divirtiéndome con alguna de [estas personas](https://www.instagram.com/p/CACQTU1HBKD/).

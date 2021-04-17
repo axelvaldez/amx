@@ -32,3 +32,14 @@ closeLinks.forEach((link) => {
     hideOverlays();
   });
 });
+
+// LoFi images in content
+
+const images = document.querySelectorAll('.content img');
+
+images.forEach(img =>{
+  let wrapper = document.createElement('div');
+  wrapper.classList.add('img-lofi');
+  img.parentElement.appendChild(wrapper);
+  wrapper.appendChild(img);
+});

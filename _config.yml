@@ -1,4 +1,4 @@
-url: "https://axelmx.netlify.app"
+url: "https://axel.mx"
 baseurl: "/"
 title: "Axel Valdez"
 
@@ -6,3 +6,7 @@ permalink: /:categories/:year/:month/:title
 
 plugins:
   - jekyll-feed
+
+sass:
+  style: compressed
+  sourcemap: never

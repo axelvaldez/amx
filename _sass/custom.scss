@@ -221,3 +221,21 @@ section{
   }
 
 }
+
+.img-lofi{
+  background: url(/assets/img/img-texture.png);
+  background-size: cover;
+
+  img{
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: plus-lighter;
+    filter: saturate(0);
+    transition: .1s ease-in all;
+
+    // &:hover{
+    //   mix-blend-mode: normal;
+    //   filter: saturate(100%);
+    // }
+  }
+}
