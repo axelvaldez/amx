@@ -4,6 +4,22 @@ title: "Axel Valdez"
 
 permalink: /:year/:month/:title/
 
+theme: amx
+
 sass:
   style: compressed
   sourcemap: never
+
+months:
+    - Enero
+    - Febrero
+    - Marzo
+    - Abril
+    - Mayo
+    - Junio
+    - Julio
+    - Agosto
+    - Septiembre
+    - Octubre
+    - Noviembre
+    - Diciembre

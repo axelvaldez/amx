@@ -8,7 +8,7 @@
         </a>
       </div>
       <div class="col-lg-4 order-1 order-lg-2">
-        <span class="post-list-date font-weight-normal d-block text-left text-lg-right">{{ site.data.months.names[month] }} {{ post.date | date: "%d, %Y" }}</span>
+        <span class="post-list-date font-weight-normal d-block text-left text-lg-right">{{ site.months[month] }} {{ post.date | date: "%d, %Y" }}</span>
       </div>
     </li>
     {% endfor %}
