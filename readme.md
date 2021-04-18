@@ -1,8 +1,3 @@
-# Personal Blog
-Jekyll + Bootstrap
+# My personal blog, axel.mx
 
-### To do:
-- Favicon
-- Twitter cards / Facebook OG
-- Meta tags
-- Posts
+Made with Jekyll + Bootstrap, hosted by Netlify.
