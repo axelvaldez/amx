@@ -10,6 +10,9 @@ sass:
   style: compressed
   sourcemap: never
 
+plugins:
+  - jekyll-postfiles
+  
 months:
     - Enero
     - Febrero
