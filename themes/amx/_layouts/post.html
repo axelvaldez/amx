@@ -27,12 +27,18 @@
 
         {{ page.content }}
 
-        {% assign month = page.date | date: '%m' | minus: 1%}
-        <p>
-          {% include icons/calendar.svg %}
-          {{ site.months[month] }}
-          {{ page.date | date: "%d, %Y" }}
-        </p>
+        <div class="d-flex">
+          {% assign month = page.date | date: '%m' | minus: 1%}
+          <p>
+            {% include icons/calendar.svg %}
+            {{ site.months[month] }}
+            {{ page.date | date: "%d, %Y" }}
+          </p>
+          <p class="ml-auto">
+            {% include icons/envelope.svg %}
+            <a href="#respond">Responder<span class="d-none d-sm-inline"> por email</span></a>
+          </p>
+        </div>
       </article>
     <!-- end column 2 -->
   </div>
