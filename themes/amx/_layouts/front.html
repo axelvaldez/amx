@@ -25,18 +25,21 @@
         {% if post.tldr %}
           <p class="lead">{{ post.tldr }}</p>
         {% endif %}
-        
-        {% assign month = post.date | date: '%m' | minus: 1%}
-        <p>
-          {% include icons/calendar.svg %}
-          {{ site.months[month] }}
-          {{ post.date | date: "%d, %Y" }}
-        </p>
 
         {{ post.excerpt }}
-        {% if post.excerpt != post.content %}
-            <a href="{{ post.url }}">Seguir leyendo</a>
-        {% endif %}
+        
+        <div class="d-flex">
+          {% assign month = post.date | date: '%m' | minus: 1%}
+          <p>
+            {% include icons/calendar.svg %}
+            {{ site.months[month] }}
+            {{ post.date | date: "%d, %Y" }}
+          </p>
+            
+          {% if post.excerpt != post.content %}
+              <p class="ml-auto"><a href="{{ post.url }}">Seguir leyendo &rarr;</a></p>
+          {% endif %}
+        </div>
       </article>
     {% endfor %}
     <!-- end column 2 -->
