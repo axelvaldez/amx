@@ -1,39 +1,44 @@
 {% include header.html %}
-<section>
 
-  <div class="row">
-    <div class="col-lg-8">
-      <h1>{{ page.title }}</h1>
-    </div>
+<div class="row">
+  <div class="col-lg-2">
+    <!-- column 1 -->
+    <p class="nav-logo m-0">
+        <a href="/" class="nodecoration"><svg class="logo nav-logo-svg" width="1605" height="1252" viewBox="0 0 1605 1252" fill="#222222" xmlns="http://www.w3.org/2000/svg">
+            <path d="M934.169 0.455566H671.599H498.669C598.299 58.6256 666.489 164.736 671.599 287.166V951.146C671.599 1116.46 805.609 1250.47 970.919 1250.47H1233.49V299.776C1233.49 134.466 1099.48 0.455566 934.169 0.455566Z"></path>
+            <path d="M0.498657 951.146C0.498657 1117.14 135.059 1251.7 301.049 1251.7C467.039 1251.7 601.599 1117.14 601.599 951.146V650.596H301.049C135.059 650.596 0.498657 785.156 0.498657 951.146Z"></path>
+            <path d="M322.996 580.593C476.861 580.593 601.593 455.861 601.593 301.996C601.593 148.131 476.861 23.3984 322.996 23.3984C169.131 23.3984 44.3988 148.131 44.3988 301.996C44.3988 455.861 169.131 580.593 322.996 580.593Z"></path>
+            <path d="M1453.77 951.146C1370.77 951.146 1303.49 1018.43 1303.49 1101.43V1251.71H1453.77C1536.76 1251.71 1604.05 1184.43 1604.05 1101.43C1604.04 1018.43 1536.76 951.146 1453.77 951.146Z"></path>
+        </svg></a>
+    </p>
+    <!-- end column 1 -->
   </div>
 
-  <div class="row">
-      <!-- blog posts -->
-      <div class="col-lg-8 content">
+  <div class="col-lg-6 offset-lg-1">
+    <!-- column 2 -->
+      <article class="mb-5">
+        <header>
+          <h2><a href="{{ page.url }}" title="Leer {{ page.title }}">{{ page.title }}</a></h2>
+        </header>
         {% if page.tldr %}
-          <div class="lead">
-            <p>{{ page.tldr }}</p>
-          </div>
+          <p class="lead">{{ page.tldr }}</p>
         {% endif %}
-        {{ content }}
-      </div>
 
-      <!-- sidebar -->
-      <div class="col-12 col-lg-3 offset-lg-1 mt-5 mt-lg-0 ">
-        <div class="color-invert d-flex d-lg-block align-items-stretch">
-          <p class="img-axel mb-0 d-flex align-items-center">{% include icons/axel.svg %}</p>
-          {% if page.url == "/about" %}
-            <p class="p-3 mb-0 d-flex align-items-center">
-              <span>Ese de arriba soy yo. Más o menos.</span>
-            </p>
-          {% else %}
-            <p class="p-3 mb-0 d-flex align-items-center">
-              <span>Hola, soy Axel y este es mi blog. <a href="/about">Acá puedes saber más de mí</a>.</span>
-            </p>
-          {% endif %}
-        </div>
-      </div>
+        {{ page.content }}
+      </article>
+    <!-- end column 2 -->
   </div>
-  
-</section>
+
+  <div class="col-lg-2 offset-lg-1">
+    <!-- column 3 -->
+    <div class="d-flex d-lg-block align-items-stretch">
+      <p class="mb-0 img-axel d-flex align-items-center img-circle">{% include icons/axel.svg %}</p>
+      <p class="pt-3 text-center mb-0 d-flex align-items-center">
+        <span>Ese de arriba soy yo. Más o menos.</span>
+      </p>
+    </div>
+    <!-- end column 3 -->
+  </div>
+</div>
+
 {% include footer.html %}

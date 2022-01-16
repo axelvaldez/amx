@@ -68,7 +68,7 @@ a{
     }
 
     svg{
-      fill: var(--color-text);
+      fill: currentColor;
     }
 
     &:hover{
@@ -95,8 +95,17 @@ img{
 }
 
 .nav{
-    margin-bottom: 4rem;
     line-height: 1;
+
+    a{
+      color: currentColor;
+      background: none;
+
+      &:hover{
+        color: var(--color-accent);
+        background: none;
+      }
+    }
 }
 
 // SVG
@@ -104,6 +113,15 @@ img{
 .logo{
     width: 100%;
     height: auto;
+
+    .nav &{
+      width: auto;
+      height: 1rem;
+
+      &:hover{
+        fill: var(--color-accent);
+      }
+    }
 
     .footer &{
       fill: var(--color-light);
@@ -125,6 +143,7 @@ img{
 
 .img-axel{
   background: var(--color-accent);
+  border-radius: 50%;
 
   svg{
     fill: var(--color-dark);
@@ -218,6 +237,10 @@ section{
 .color-invert{
   background: var(--color-dark);
   color: var(--color-light);
+
+  a:hover{
+    color: var(--color-accent);
+  }
 
   @media (prefers-color-scheme: dark){
     color: var(--color-text);
