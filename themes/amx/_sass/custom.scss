@@ -255,7 +255,7 @@ section{
   img{
     max-width: 100%;
     height: auto;
-    mix-blend-mode: plus-lighter;
+    mix-blend-mode: lighten;
     filter: saturate(0);
     transition: .1s ease-in all;
 
