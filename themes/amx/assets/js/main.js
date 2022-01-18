@@ -35,7 +35,7 @@ closeLinks.forEach((link) => {
 
 // LoFi images in content
 
-const images = document.querySelectorAll('.content img');
+const images = document.querySelectorAll('article img');
 
 images.forEach(img =>{
   let wrapper = document.createElement('div');
